@@ -1,6 +1,8 @@
 name: test
 
-on: push
+on:
+  issues:
+    types: [opened, edited, pinned, locked, unpinned]
 
 jobs:
   MyJobs:
